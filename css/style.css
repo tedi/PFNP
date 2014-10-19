@@ -1,0 +1,30 @@
+a {
+	text-decoration: none;
+	color: #E82C0C;
+}
+
+/*This is where the kitten styling starts*/
+.kitten {
+	padding: 10px;
+	margin: 10px;
+	width: 200px;
+	border: 1px solid red;
+}
+
+.kitten img {
+	max-width: 100%;
+}
+
+.kitten p {
+	background: #000;
+	color: #fff;
+	text-align: center;
+	margin: 0;
+}
+
+#kitten_container {
+	background: #ccc;
+	width: 80%;
+	margin: 0 auto;
+}
+/*This is where kitten styling ends*/
