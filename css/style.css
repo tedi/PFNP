@@ -3,28 +3,117 @@ a {
 	color: #E82C0C;
 }
 
+body {
+	background: #ffff9d;
+	margin: 0;
+	padding: 0;
+}
+
 /*This is where the kitten styling starts*/
 .kitten {
-	padding: 10px;
-	margin: 10px;
-	width: 200px;
-	border: 1px solid red;
+	width: 100%;
+	/*border: 1px solid red;*/
+	margin-bottom: 10px;
+	transition: 0.3s all;
+}
+
+.clearfix {
+	float: none;
+	clear: both;
 }
 
 .kitten img {
+	width: 100%;
 	max-width: 100%;
 }
 
 .kitten p {
-	background: #000;
+	background: #ff613b;
 	color: #fff;
 	text-align: center;
 	margin: 0;
+	padding: 5px 0;
+	transition: 0.3s all;
+}
+
+.kitten a:hover p { /*pseudo-class*/
+	background: #00a388;
 }
 
 #kitten_container {
-	background: #ccc;
+	background: #beeb9f;
+	width: 80%;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+/*This is where kitten styling ends*/
+
+/*This is where the header starts*/
+#header {
+	background: #ff613b;
+	margin-bottom: 20px;
+}
+
+#header a {
+	color: #fff;
+}
+
+#header_container {
 	width: 80%;
 	margin: 0 auto;
 }
-/*This is where kitten styling ends*/
+
+#header #logo {
+	font-size: 30px;
+	color: #ffff9d;
+}
+
+#header .nav_links {
+	float: right;
+	width: 50%;
+	text-align: right;
+	padding-top: 10px;
+}
+
+#header .nav_links a {
+	padding: 10px;
+}
+/*this is where the header ends*/
+
+/*This is the about section*/
+#about_container {
+	width: 80%;
+	margin: 0 auto;
+	background: #beeb9f;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	display: none;
+}
+
+#about_container h2 {
+	color: #ff613b;
+	padding: 10px;
+	font-size: 45px;
+}
+/*Ending about section*/
+
+@media only screen and (min-width: 600px) {
+	.kitten {
+		padding: 1%;
+		margin: 1%;
+		width: 46%;
+		float: left;
+	}
+}
+
+@media only screen and (min-width: 800px) {
+	.kitten {
+		width: 21%;
+	}
+	#about_container {
+		display: block;
+	}
+}
+
+
+
